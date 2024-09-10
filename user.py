@@ -1,5 +1,5 @@
 import sqlite3
-
+import csv
 
 def create_connection():
     try:    
@@ -43,9 +43,6 @@ def create_table(conn):
     cur = conn.cursor()
     cur.execute(CREATE_USERS_TABLE_QUERY)
     print("User table was created successfully.")
-    
-import csv
-
 def read_csv():
     users = []
     with open("sample_users.csv", 'r') as f:
@@ -166,7 +163,7 @@ def main():
     elif user_input == "9":
         user_id = input("Enter id of user: ")
         if user_id.isnumeric():
-            column_name = input(f"Enter the column you want to edit. Pleas make sure column is with in {COLUMNS}:")
+            column_name = input(f"Enter the column you want to make change. Please make sure column is with in {COLUMNS}:")
             if column_name in COLUMNS:
                 column_value = input(f"Enter the value of {column_name}: ")
                 update_user_by_id(con, user_id, column_name, column_value)
