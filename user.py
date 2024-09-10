@@ -1,6 +1,20 @@
 import sqlite3
 import csv
 
+# 1. install git
+# 2. create github account and create new repository
+# 3. go to terminal/ cmd and write below commands
+
+# git config --global user.name "Sandip Rai"
+# git config --global user.email "sanfg44@gmail.com"
+
+# 4. git init
+# 5. git add .
+# 6. git commit -m "Your commit message"
+# copy paste the git commands from github nre repossitory
+
+
+
 def create_connection():
     try:    
         con = sqlite3.connect("users.sqlite3")
