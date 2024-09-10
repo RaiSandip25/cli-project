@@ -13,7 +13,9 @@ import csv
 # 6. git commit -m "Your commit message"
 # copy paste the git commands from github nre repossitory
 
-
+# git add .
+# git commit -m "your commit message"
+# git push origin
 
 def create_connection():
     try:    
