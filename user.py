@@ -148,7 +148,7 @@ def update_user_by_id(con, user_id, column_name, column_value):
 def main():
     con = create_connection()
     user_input = input(INPUT_STRING)
-    if user_input == "1":pi
+    if user_input == "1":
         create_table(con)
     elif user_input == "2":
         users = read_csv()
